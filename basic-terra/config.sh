@@ -3,7 +3,7 @@
 set -e
 
 # Environment Variables
-AWS_REGION="ap-south-1"
+AWS_REGION="us-east-1"
 S3_BUCKET_NAME="chvishal-terraform-state-bucket-2025"
 DYNAMODB_TABLE_NAME="terraform-state-lock" 
 STATE_KEY="terraform/terraform.tfstate" 
