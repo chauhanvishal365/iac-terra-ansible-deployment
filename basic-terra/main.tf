@@ -22,7 +22,7 @@ resource "aws_vpc_security_group_ingress_rule" "example" {
 }
 
 resource "aws_instance" "web" {
-  ami             = "ami-020cba7c55df1f615"  # Use a valid AMI ID for your region
+  ami             = "ami-07a00cf47dbbc844c"  # Canonical, Ubuntu, 26.04, amd64 resolute image
   instance_type   = "t2.micro"
   security_groups = [aws_security_group.sg.name]
   user_data       = file("userdata.sh")
